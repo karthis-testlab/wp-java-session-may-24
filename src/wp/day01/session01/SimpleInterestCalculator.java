@@ -4,7 +4,7 @@ public class SimpleInterestCalculator {
 
 	public static void main(String[] args) {
 		
-		int p = 100, r = 5, t = 2;
+		int p = 20, r = 5, t = 2;
 		
 		int si = p * r * t / 100;
 		
