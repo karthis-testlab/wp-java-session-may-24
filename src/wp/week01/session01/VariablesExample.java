@@ -1,4 +1,4 @@
-package wp.day01.session01;
+package wp.week01.session01;
 
 public class VariablesExample {
 

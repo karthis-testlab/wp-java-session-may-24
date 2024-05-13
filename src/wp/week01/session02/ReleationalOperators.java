@@ -1,4 +1,4 @@
-package wp.day01.session02;
+package wp.week01.session02;
 
 public class ReleationalOperators {
 
