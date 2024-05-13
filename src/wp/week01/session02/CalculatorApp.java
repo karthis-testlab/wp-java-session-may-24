@@ -32,6 +32,8 @@ public class CalculatorApp {
 		} else {
 			System.out.println("Invalid operation");
 		}
+		
+		input.close();
 
 	}
 
