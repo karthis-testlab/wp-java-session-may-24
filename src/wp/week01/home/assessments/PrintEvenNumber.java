@@ -11,6 +11,11 @@ public class PrintEvenNumber {
 				System.out.println(i);
 			}
 		}
+		
+		// Another Approach
+		for(int i = 2; i < maxNumber; i = i+2) {
+			System.out.println(i);
+		}
 
 	}
 

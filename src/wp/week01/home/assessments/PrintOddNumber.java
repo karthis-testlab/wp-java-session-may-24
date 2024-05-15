@@ -11,6 +11,11 @@ public class PrintOddNumber {
 				System.out.println(i);
 			}
 		}
+		
+		// Another Approach
+		for(int i = 1; i < maxNumber; i = i +2) {
+			System.out.println(i);
+		}
 
 	}
 
