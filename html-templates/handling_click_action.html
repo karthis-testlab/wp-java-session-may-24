@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+	<title>Selenium WebDriver - Click()</title>
+</head>	
+
+<h1>Using Click Method in Multiple Ways</h1>
+
+<p>Clicking on button web element</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello! Team, Welcome to the Selenium WebDriver World.";
+}
+</script>
+<br>
+<p>Clicking on the radio button web element</p>
+<p>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label>
+</p>
+<br>
+<p>Clicking on the hyper link web element(text)</p>
+<ul>
+<li>
+<a href="https://www.saucedemo.com/">Visit Swag Labs</a>
+</li>
+<li>
+<a href="https://the-internet.herokuapp.com/">Visit Internet Herokuapp</a>
+</li>
+</ul>
+<br>
+<p>Clicking on the check box web element</p>
+<p>
+<input type="checkbox" id="bike" name="bike" value="Bike">
+<label for="bike"> I have a bike</label><br>
+<input type="checkbox" id="car" name="car" value="Car">
+<label for="car"> I have a car</label><br>
+<input type="checkbox" id="boat" name="boat" value="Boat">
+<label for="boat"> I have a boat</label><br><br>
+</p> 
+</body>
+</html>

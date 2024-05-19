@@ -10,7 +10,7 @@ public class ChromeDriverLaunch {
 				
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.saucedemo.com/");
+		driver.get("https://www.saucedemo.com/");	
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		System.out.println(driver.getTitle());
 		driver.quit();
