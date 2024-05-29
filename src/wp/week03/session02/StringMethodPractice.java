@@ -1,5 +1,7 @@
 package wp.week03.session02;
 
+import java.util.Arrays;
+
 public class StringMethodPractice {
 
 	public static void main(String[] args) {
@@ -20,6 +22,10 @@ public class StringMethodPractice {
 		 * returns false if the string doesn't contain the specified characte 
 		 * 
 		 */
+		
+		String contain = "Java is a Progamming language";
+		System.out.println(contain.contains("Java"));
+		System.out.println(contain.contains("z"));
 		 
 		 /*
 		  * join() - Joins the given strings using the delimiter
@@ -42,6 +48,12 @@ public class StringMethodPractice {
 		  * returns a string
 		  * 
 		  */
+		
+		String var1 = "My name";
+		String var2 = "is";
+		String var3 = "Karthikeyan";
+		
+		System.out.println(String.join("#", var1, var2, var3));
 		  
 		  /*
 		   * substring() - Returns the substring of the string
@@ -67,6 +79,10 @@ public class StringMethodPractice {
 		   * index and extends to the end of the string
 		   * 
 		   */
+		
+		String main = "Java is fun";
+		System.out.println(main.substring(5));
+		System.out.println(main.substring(5, 7));
 		
 		   /*
 		    * replace() - Replaces the specified old character with the specified new character.
@@ -98,6 +114,10 @@ public class StringMethodPractice {
 		    * 
 		    */
 		
+		String string = "Rat Red";
+		System.out.println(string.replace('R', 'C'));
+		System.out.println(string.replace("Rat", "Bat"));
+		
 		    /*
 		     * replaceAll() - Replaces all substrings matching the regex pattern.
 		     * 
@@ -121,6 +141,12 @@ public class StringMethodPractice {
 		     * 
 		     */
 		
+		     String var = "My Name is Karthikeyan";
+		     System.out.println(var.replaceAll(" ", ""));
+		     String var4 = "Java123is456fun";
+		     System.out.println(var4.replaceAll("\\d+", ""));
+		     System.out.println("Java String contains()".replaceAll("\\W+", ""));
+		
 		     /*
 		      * replaceFirst() - Replaces the first matching substring.
 		      * 
@@ -138,6 +164,9 @@ public class StringMethodPractice {
 		      * replaced with the replacement string.
 		      * 
 		      */
+		     
+		     String replace_first = "abbbaaac";
+		     System.out.println(replace_first.replaceFirst("aa", "xz"));
 		
 		      /*
 		       * charAt() - Returns the character present in the specified location.
@@ -156,6 +185,9 @@ public class StringMethodPractice {
 		       * it throws an exception.
 		       * 
 		       */
+		     
+		     String char_at = "Karthik";
+		     System.out.println(char_at.charAt(2));
 		
                /*
                 * indexOf() - Returns the position of the specified character in the string.
@@ -205,6 +237,202 @@ public class StringMethodPractice {
                 * the search starts at index 8 and there is no "Java" in "va programming".
                 * 		
                 */
+		     
+		     String str = "Javais";
+		     System.out.println(str.indexOf("is"));
+		
+		        /*
+		         * trim() - Removes any leading and trailing whitespaces.
+		         * The trim() method removes any leading (starting) and trailing (ending) 
+		         * whitespaces from the specified string.
+		         * 
+		         * Parameters:
+		         * the trim() method doesn't take any parameters
+		         * 
+		         * Return Value:
+		         * returns a string with leading and trailing whitespace removed
+		         * returns the original string if there is no whitespace in the 
+		         * start or the end of the string
+		         * 
+		         */
+		     
+		     String name = " My name is Karthik ";
+		     System.out.println(name.trim());
+		
+		         /*
+		          * split() - Breaks the string into an array of strings.
+		          * The split() method divides the string at the specified regex 
+		          * and returns an array of substrings.
+		          * 
+		          * Parameters:
+		          * The string split() method can take two parameters:
+		          * 
+		          * regex - the string is divided at this regex (can be strings)
+		          * limit (optional) - controls the number of resulting substrings
+		          * 
+		          *  If the limit parameter is not passed, split() returns all possible substrings.
+		          *  
+		          *  Return Value:
+		          *  returns an array of substrings
+		          *  
+		          *  Note: If the regular expression passed to split() is invalid, the split() 
+		          *  method raises PatternSyntaxExpression exception.
+		          * 
+		          */
+		     String split = "Learning Java is fun";
+		     String[] split2 = split.split(" ", 2);
+		     System.out.println(Arrays.toString(split2));
+		
+		          /*
+		           * toLowerCase() - Converts the string to lowercase.
+		           * The toLowerCase() method converts all characters in the string to lowercase characters.
+		           * 
+		           * Syntax:
+		           * The syntax of the string toLowerCase() method is:
+		           * string.toLowerCase()
+		           * Here, string is an object of the String class.
+		           * 
+		           * Parameters:
+		           * The toLowerCase() method does not take any parameters.
+		           * 
+		           * Return Value:
+		           * returns a string with all upper case letters converted to lowercase letters.
+		           *  
+		           */
+		     System.out.println("KARTHIKYEAN".toLowerCase());
+		
+		           /*
+		            * toUpperCase() - Converts the string to uppercase.
+		            * 
+		            * Syntax:
+		            * The syntax of the string toUpperCase() method is:
+		            * string.toUpperCase()
+		            * Here, string is an object of the String class.
+		            * 
+		            * Parameters:
+		            * doesn't take any parameters
+		            * 
+		            * Return Value:
+		            * returns a string with all lower case letters converted to upper case
+		            * 
+		            */
+		     System.out.println("karthikeyan".toUpperCase());
+		
+		            /*
+		             * valueOf() - Returns the string representation of the specified argument.
+		             * The valueOf() method returns the string representation of the argument passed.
+                     * 
+                     * Syntax:
+                     * The syntax of the String valueOf() method for different data types is:
+                     * String.valueOf(boolean b)
+                     * String.valueOf(char c)
+                     * String.valueOf(char[] data)
+                     * String.valueOf(double d)
+                     * String.valueOf(float f)
+                     * String.valueOf(int b)
+                     * String.valueOf(long l)
+                     * String.valueOf(Object o)
+                     * 
+                     * Here, valueOf() is a static method. We call the valueof() method using 
+                     * the class name like this: String.valueOf(b);
+                     * 
+                     * Parameters:
+                     * The valueOf() method takes a single parameter.
+                     * 
+                     * data that is to be converted to a string
+                     * 
+                     * Return Value:
+                     * returns the string representation of the argument passed 
+                     * 
+		             */
+		     int a = 120;
+		     System.out.println(String.valueOf(a));
+		
+		             /*
+		              * toCharArray() - Converts the string to a char array.
+                      * 
+                      * Syntax:
+                      * string.toCharArray()
+                      * 
+                      * Parameters:
+                      * The toCharArray() method doesn't take any parameters.
+                      * 
+                      * Return Value:
+                      * returns a char array
+		              *  
+		              */
+		     String i = "Muthu";
+		     char[] charArray = i.toCharArray();
+		     System.out.println(Arrays.toString(charArray));
+		     for (int j = charArray.length - 1; j >= 0; j--) {
+				System.out.print(charArray[j]);
+			 }
+		     System.out.println("");
+		     
+		
+		              /*
+		               * startsWith() - Checks if the string begins with the given string.
+                       * The startsWith() method checks whether the string begins with the 
+                       * specified string or not.
+                       * 
+		               * Syntax:
+		               * The syntax of the string startsWith() method is:
+                       * string.startsWith(String str, int offset)
+                       *
+		               * Parameters:
+		               * The startsWith() method can take two parameters.
+		               * 
+		               * str - check whether string starts with str or not
+		               * offset (optional) - checks in a substring of string 
+		               * starting from this index.
+		               * 
+		               * Return Value:
+		               * returns true if the string begins with the given string
+		               * returns false if the string doesn't begin with the given string
+		               *  
+		               */
+		     String h = "QWERTY";
+		     System.out.println(h.startsWith("QWET"));
+		 
+		               /*
+		                * endsWith() - Checks if the string ends with the given string.
+                        *
+                        * Syntax:
+                        * The syntax of the string endsWith() method is:
+                        * string.endsWith(String str)
+                        * 
+                        * Parameters:
+                        * The endsWith() method takes a single parameter.
+                        * str - check whether string ends with str or not
+                        * 
+                        * Return Value:
+                        * returns true if the string ends with the given string
+                        * returns false if the string doesn't end with the given string   
+		                * 
+		                */
+		     System.out.println("King".endsWith("g"));
+		
+		                /*
+		                 * isEmpty() - Checks whether a string is empty or not.
+                         *  
+		                 * Syntax:
+		                 * The syntax of the string isEmpty() method is:
+		                 * string.isEmpty()
+		                 * Here, string is an object of the String class.
+		                 * 
+		                 * Parameters:
+		                 * The isEmpty() method does not take any parameters.
+                         *
+                         * Return Value:
+                         * returns true if the string is empty (length is 0)
+                         * returns false if the string is not empty
+		                 * 
+		                 */
+		     
+		     String empty = " ";
+		     System.out.println(empty.isEmpty());
+		     System.out.println(empty.isBlank());
+		
 
 	}
 
